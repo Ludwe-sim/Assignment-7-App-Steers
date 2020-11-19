@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Steers.MainPage"
+             BackgroundColor="Purple">
+
+
+    <StackLayout>
+        <Frame BackgroundColor="Purple" Padding="24" CornerRadius="0">
+            <Label Text="Steers" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+        </Frame>
+       
+
+        <Grid RowSpacing="0" ColumnSpacing="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+        </Grid>
+        
+
+        <Label Text="STEEERS FLAMEGRILLED" FontSize="Title" Padding="30,10,30,10"/>
+        <Button Text="Collect" FontSize="16"  HorizontalOptions="End" />
+        <Button Text="delivery" FontSize="16"  HorizontalOptions="End" />
+        <Button Text="current location" FontSize="16"  HorizontalOptions="Start" />
+        <Image Source="steers.png" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+
+        <Label FontSize="16" Padding="30,24,30,0">
+
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="test" />
+                        <Span Text="test " FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        </StackLayout>
+</ContentPage>
